@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.igor.yandextest.BandDetailActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:contentDescription="@string/band_image_description"
+        android:scaleType="centerCrop"
+        android:id="@+id/band_image"
+        android:layout_width="match_parent"
+        android:layout_height="280dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/band_genres"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="rock"/>
+
+            <TextView
+                android:id="@+id/band_stats"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/band_genres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="2 альбома"/>
+
+            <TextView
+                android:id="@+id/header_biography"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/band_stats"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="@string/biography"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/band_biography"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/header_biography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.4"
+                tools:text='Ansgar (latinized Ansgarius; Old Norse Ásgeirr) is a Germanic given name, composed of the elements ans "god", and gar \"spear".[1] Saint Ansgar, (801 – 865) was an archbishop of Hamburg-Bremen, active in the Christianization of Scandinavia. His feast day is 3 February. Ansgar is the Old High German form of the name. The form Asger was in use in Denmark in the medieval period.[2] The Old English cognate of the name is Ōsgār (the given name Oscar is however etymologically unrelated, being of Irish origin). Modern variants of the name include Norwegian Asgeir, Icelandic Ásgeir, Danish Asger, Eske, Esge, Asgar, Asker.'/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

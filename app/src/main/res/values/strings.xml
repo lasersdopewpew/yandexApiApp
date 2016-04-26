@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">YandexTest</string>
+    <string name="band_item_stats_format" formatted="false">%d альбомов, %d песен</string>
+    <string name="data_url">http://download.cdn.yandex.net/mobilization-2016/artists.json</string>
+    <string name="biography">Биография</string>
+    <string name="band_image_description">Изображение исполнителя</string>
+    <string name="bands">Исполнители</string>
+    <string name="fomat_stats_band_detail" formatted="false">%d альбомов  ·  %d песни</string>
+    <string name="data_load_error">Ошибка загрузки данных</string>
+    <string name="filter_by_tag">"Фильтр по тегам: "</string>
+    <string name="clear">Очистить</string>
+    <string name="Ok">Ок</string>
+</resources>
